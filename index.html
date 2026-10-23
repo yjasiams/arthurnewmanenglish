@@ -3,93 +3,127 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>An Nguyen – Online English Teacher (TEFL/TESOL 320h)</title>
+<title>An Nguyen – Online English Teacher | TEFL/TESOL 320h</title>
+<meta name="description" content="One-to-one online English lessons with a TEFL/TESOL-certified teacher (320 hours). General English, Business English and Young Learners.">
 <style>
-:root{--bg:#f7f9fc;--card:#fff;--tx:#14213d;--mut:#5b6b88;--pri:#1d5fd1;--acc:#ff9f1c;--bd:#e1e7f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1524;--card:#17213a;--tx:#eef2fa;--mut:#9fb0cf;--pri:#6ea2ff;--bd:#27345a}}
-:root[data-theme="dark"]{--bg:#0e1524;--card:#17213a;--tx:#eef2fa;--mut:#9fb0cf;--pri:#6ea2ff;--bd:#27345a}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.w{max-width:960px;margin:0 auto;padding:0 20px}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.logo{font-weight:700}
-.btn{display:inline-block;background:var(--acc);color:#1b1b1b;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+:root{--bg:#f6f8fc;--card:#fff;--tx:#0f1b36;--mut:#5a6987;--pri:#1a56c4;--acc:#f5a524;--bd:#e0e6f1;--ok:#17a673}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#141e36;--tx:#eef2fb;--mut:#a0b0cf;--pri:#6ea2ff;--bd:#243255}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--pri)}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;text-decoration:none;color:var(--tx)}.logo span{color:var(--pri)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}nav ul a{text-decoration:none;color:var(--mut);font-size:15px}
+.btn{display:inline-block;background:var(--acc);color:#1a1a1a;font-weight:700;padding:12px 24px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font:700 16px system-ui}
 .btn.o{background:transparent;color:var(--pri);border:2px solid var(--pri)}
 .lang{background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:6px 12px;cursor:pointer;margin-left:10px}
-.hero{padding:48px 0 40px;display:grid;gap:28px;grid-template-columns:1.4fr 1fr;align-items:center}
-h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 14px}
-.mut{color:var(--mut)}
-.badge{display:inline-block;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:4px 12px;font-size:14px;margin:0 6px 6px 0}
-.panel{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px}
-h2{font-size:28px;margin:48px 0 18px}
-.g{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.price{font-size:32px;font-weight:800;color:var(--pri)}
-.price small{font-size:14px;font-weight:400;color:var(--mut)}
-.card ul{padding-left:18px;margin:10px 0 16px}
-.pop{border:2px solid var(--acc)}
-input,select,textarea{width:100%;padding:11px;margin:6px 0 12px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit}
-footer{padding:36px 0;margin-top:40px;border-top:1px solid var(--bd);font-size:14px}
-@media(max-width:700px){.hero{grid-template-columns:1fr}}
+.hero{background:linear-gradient(135deg,#0b2d6b,#1a56c4);color:#fff;padding:64px 0 56px}
+.hero .w{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:center}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 16px}
+.hero p{opacity:.92;font-size:18px}
+.chip{display:inline-block;background:rgba(255,255,255,.14);border-radius:20px;padding:4px 12px;font-size:14px;margin:0 6px 6px 0}
+.av{width:170px;height:170px;border-radius:50%;background:#fff;color:#1a56c4;display:flex;align-items:center;justify-content:center;font-size:62px;font-weight:800;margin:0 auto 14px}
+.hc{background:rgba(255,255,255,.12);border-radius:18px;padding:24px;text-align:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-34px;position:relative}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.stat b{display:block;font-size:26px;color:var(--pri)}.stat span{font-size:13px;color:var(--mut)}
+section{padding:36px 0 8px}
+h2{font-size:28px;margin:0 0 6px}.sub{color:var(--mut);margin:0 0 22px}
+.g{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.p{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px}
+.pop{border:2px solid var(--acc);position:relative}
+.pop::before{content:"★ Most popular";position:absolute;top:-12px;left:18px;background:var(--acc);color:#1a1a1a;font-size:12px;font-weight:700;padding:2px 10px;border-radius:10px}
+.price{font-size:34px;font-weight:800;color:var(--pri)}.price small{font-size:14px;font-weight:400;color:var(--mut)}
+.p ul{padding-left:0;list-style:none;margin:12px 0 18px}.p li{padding-left:24px;position:relative;margin-bottom:6px}
+.p li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+.cr{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--tx)}
+.cr i{font-style:normal;background:var(--bg);border-radius:10px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-size:20px;flex:none}
+.cr small{display:block;color:var(--mut)}
+.cr:hover{border-color:var(--pri)}
+.steps{counter-reset:s}.step{counter-increment:s}
+.step::before{content:counter(s);display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--pri);color:#fff;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}
+input,select,textarea{width:100%;padding:12px;margin:6px 0 14px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit}
+label{font-weight:600;font-size:14px}
+footer{margin-top:48px;padding:32px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:14px}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:30px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:30}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}nav ul{display:none}}
 </style>
 </head>
 <body>
-<div class="w">
-<header><div class="logo">An Nguyen · English</div><div><a class="btn o" href="#book" data-en="Book a lesson" data-vi="Đặt lịch học">Book a lesson</a><button class="lang" id="lg">VI</button></div></header>
+<nav><div class="w"><a class="logo" href="#top">An <span>Nguyen</span> English</a>
+<ul><li><a href="#lessons" data-en="Lessons" data-vi="Khóa học">Lessons</a></li><li><a href="#creds" data-en="Credentials" data-vi="Chứng chỉ">Credentials</a></li><li><a href="#faq">FAQ</a></li><li><a href="#book" data-en="Contact" data-vi="Liên hệ">Contact</a></li></ul>
+<div><a class="btn" style="padding:8px 16px;font-size:14px" href="#book" data-en="Free trial" data-vi="Học thử">Free trial</a><button class="lang" id="lg">VI</button></div></div></nav>
 
-<section class="hero">
+<header class="hero" id="top"><div class="w">
 <div>
 <h1 data-en="Speak English with confidence — for work, study and life." data-vi="Tự tin giao tiếp tiếng Anh — cho công việc, học tập và cuộc sống.">Speak English with confidence — for work, study and life.</h1>
-<p class="mut" data-en="One-to-one online lessons with a TEFL/TESOL-certified teacher (320 hours). Clear lessons, real practice, personal feedback." data-vi="Học tiếng Anh 1-1 online với giáo viên có chứng chỉ TEFL/TESOL (320 giờ). Bài học rõ ràng, luyện tập thực tế, nhận xét cá nhân.">One-to-one online lessons with a TEFL/TESOL-certified teacher (320 hours). Clear lessons, real practice, personal feedback.</p>
-<p><span class="badge">TEFL/TESOL 320h</span><span class="badge">ITTT 250h Diploma</span><span class="badge">TEOL · TEYL · TEAL</span><span class="badge">3 years teaching</span></p>
+<p data-en="One-to-one online lessons with a TEFL/TESOL-certified teacher. Clear lessons, real speaking practice and personal feedback." data-vi="Học tiếng Anh 1-1 online với giáo viên có chứng chỉ TEFL/TESOL. Bài học rõ ràng, luyện nói thực tế, nhận xét cá nhân.">One-to-one online lessons with a TEFL/TESOL-certified teacher. Clear lessons, real speaking practice and personal feedback.</p>
+<p><span class="chip">TEFL/TESOL 320h</span><span class="chip">ITTT 250h Diploma</span><span class="chip">TEOL · TEYL · TEAL</span></p>
 <a class="btn" href="#book" data-en="Book a trial lesson" data-vi="Đặt buổi học thử">Book a trial lesson</a>
+<a class="btn o" style="color:#fff;border-color:#fff;margin-left:8px" href="#creds" data-en="View certificates" data-vi="Xem chứng chỉ">View certificates</a>
 </div>
-<div class="panel">
-<strong data-en="Why learn with me?" data-vi="Vì sao học với mình?">Why learn with me?</strong>
-<ul>
-<li data-en="I learned languages myself (Japanese N3, German) — I understand your struggles." data-vi="Mình cũng là người học ngoại ngữ (tiếng Nhật N3, tiếng Đức) nên hiểu khó khăn của bạn.">I learned languages myself (Japanese N3, German) — I understand your struggles.</li>
-<li data-en="Business English trained with university courses (UW, HKUST, ASU, UC Irvine)." data-vi="Tiếng Anh thương mại được bồi dưỡng qua các khóa đại học (UW, HKUST, ASU, UC Irvine).">Business English trained with university courses (UW, HKUST, ASU, UC Irvine).</li>
-<li data-en="Digital materials and progress tracking built with Office, Python and AI tools." data-vi="Tài liệu số và theo dõi tiến độ bằng Office, Python và công cụ AI.">Digital materials and progress tracking built with Office, Python and AI tools.</li>
-</ul>
+<div class="hc"><div class="av">AN</div><b>An Thien Phuong Nguyen</b><br><span style="opacity:.85" data-en="English Language Teacher" data-vi="Giáo viên tiếng Anh">English Language Teacher</span></div>
+</div></header>
+
+<div class="w">
+<div class="stats">
+<div class="stat"><b>320h</b><span data-en="TEFL/TESOL training" data-vi="Đào tạo TEFL/TESOL">TEFL/TESOL training</span></div>
+<div class="stat"><b>3 yrs</b><span data-en="Teaching experience" data-vi="Kinh nghiệm giảng dạy">Teaching experience</span></div>
+<div class="stat"><b>8</b><span data-en="Teaching certificates" data-vi="Chứng chỉ giảng dạy">Teaching certificates</span></div>
+<div class="stat"><b>3</b><span data-en="Languages spoken" data-vi="Ngôn ngữ sử dụng">Languages spoken</span></div>
 </div>
+
+<section id="about"><h2 data-en="About your teacher" data-vi="Về giáo viên">About your teacher</h2>
+<p class="sub" data-en="I’m An, a TEFL/TESOL-certified teacher who also learned Japanese (JLPT N3) and German, so I understand the learner’s perspective first-hand. I combine classroom methodology with digital tools (Microsoft Office, Python, AI) to create clear, engaging lessons and track your progress. My Business English is backed by university courses from the University of Washington, HKUST, Arizona State University and UC Irvine." data-vi="Mình là An, giáo viên có chứng chỉ TEFL/TESOL, đồng thời cũng học tiếng Nhật (JLPT N3) và tiếng Đức nên hiểu rõ góc nhìn của người học. Mình kết hợp phương pháp giảng dạy với công cụ số (Microsoft Office, Python, AI) để tạo bài học sinh động và theo dõi tiến độ của bạn. Tiếng Anh thương mại của mình được bồi dưỡng qua các khóa của University of Washington, HKUST, Arizona State University và UC Irvine.">I’m An, a TEFL/TESOL-certified teacher who also learned Japanese (JLPT N3) and German, so I understand the learner’s perspective first-hand. I combine classroom methodology with digital tools (Microsoft Office, Python, AI) to create clear, engaging lessons and track your progress. My Business English is backed by university courses from the University of Washington, HKUST, Arizona State University and UC Irvine.</p></section>
+
+<section id="lessons"><h2 data-en="Lessons &amp; prices" data-vi="Khóa học &amp; học phí">Lessons &amp; prices</h2><p class="sub" data-en="Online via Zoom or Google Meet. Flexible schedule." data-vi="Học online qua Zoom hoặc Google Meet. Lịch học linh hoạt.">Online via Zoom or Google Meet. Flexible schedule.</p>
+<div class="g">
+<div class="p"><b data-en="General English" data-vi="Tiếng Anh tổng quát">General English</b><div class="price">$12<small> / hour</small></div><ul><li data-en="Speaking, listening, grammar" data-vi="Nói, nghe, ngữ pháp">Speaking, listening, grammar</li><li data-en="Plan based on your level" data-vi="Lộ trình theo trình độ">Plan based on your level</li><li data-en="Speaking practice for IELTS" data-vi="Luyện nói cho IELTS">Speaking practice for IELTS</li></ul><a class="btn o" href="#book" data-pk="General English" data-en="Choose" data-vi="Chọn">Choose</a></div>
+<div class="p pop"><b data-en="Business English" data-vi="Tiếng Anh thương mại">Business English</b><div class="price">$18<small> / hour</small></div><ul><li data-en="Emails, meetings, presentations" data-vi="Email, họp, thuyết trình">Emails, meetings, presentations</li><li data-en="Interview &amp; CV English" data-vi="Tiếng Anh phỏng vấn &amp; CV">Interview &amp; CV English</li><li data-en="Professional vocabulary" data-vi="Từ vựng chuyên ngành">Professional vocabulary</li></ul><a class="btn" href="#book" data-pk="Business English" data-en="Choose" data-vi="Chọn">Choose</a></div>
+<div class="p"><b data-en="Young Learners (TEYL)" data-vi="Tiếng Anh trẻ em (TEYL)">Young Learners (TEYL)</b><div class="price">$12<small> / hour</small></div><ul><li data-en="Games &amp; age-appropriate activities" data-vi="Trò chơi &amp; hoạt động phù hợp lứa tuổi">Games &amp; age-appropriate activities</li><li data-en="Short, engaging sessions" data-vi="Buổi học ngắn, hấp dẫn">Short, engaging sessions</li><li data-en="Progress updates for parents" data-vi="Cập nhật tiến độ cho phụ huynh">Progress updates for parents</li></ul><a class="btn o" href="#book" data-pk="Young Learners" data-en="Choose" data-vi="Chọn">Choose</a></div>
+</div>
+<p class="sub" style="margin-top:14px" data-en="🎁 First 30-minute trial lesson at 50% off. Discounts on 10-lesson packs." data-vi="🎁 Buổi học thử 30 phút đầu tiên giảm 50%. Giảm giá khi mua gói 10 buổi.">🎁 First 30-minute trial lesson at 50% off. Discounts on 10-lesson packs.</p></section>
+
+<section id="creds"><h2 data-en="Verified credentials" data-vi="Chứng chỉ có thể kiểm chứng">Verified credentials</h2><p class="sub" data-en="Click any card to view the original document." data-vi="Nhấn vào từng thẻ để xem bản gốc.">Click any card to view the original document.</p>
+<div class="g" id="cl"></div>
+<p style="margin-top:16px"><a class="btn o" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/15yja0OrzzXseJsdM78HadPis_-QoBF-x?usp=drive_link" data-en="📁 Open full certificate folder" data-vi="📁 Mở thư mục chứng chỉ đầy đủ">📁 Open full certificate folder</a></p></section>
+
+<section><h2 data-en="How it works" data-vi="Cách hoạt động">How it works</h2>
+<div class="g steps" style="margin-top:14px">
+<div class="p step"><b data-en="Send your request" data-vi="Gửi yêu cầu">Send your request</b><br><span class="sub" data-en="Use the form below or WhatsApp." data-vi="Dùng form bên dưới hoặc WhatsApp.">Use the form below or WhatsApp.</span></div>
+<div class="p step"><b data-en="Free level check" data-vi="Kiểm tra trình độ miễn phí">Free level check</b><br><span class="sub" data-en="We set your goals and plan." data-vi="Cùng đặt mục tiêu và lộ trình.">We set your goals and plan.</span></div>
+<div class="p step"><b data-en="Start learning" data-vi="Bắt đầu học">Start learning</b><br><span class="sub" data-en="Book your lessons and begin online." data-vi="Đặt lịch và học online.">Book your lessons and begin online.</span></div>
+</div></section>
+
+<section id="faq"><h2>FAQ</h2>
+<details><summary data-en="Which levels do you teach?" data-vi="Bạn dạy trình độ nào?">Which levels do you teach?</summary><p data-en="Beginners to advanced adults, and young learners. We start with a free level check." data-vi="Từ người mới bắt đầu đến nâng cao, cả người lớn và trẻ em. Bắt đầu bằng buổi kiểm tra trình độ miễn phí.">Beginners to advanced adults, and young learners. We start with a free level check.</p></details>
+<details><summary data-en="How are lessons held?" data-vi="Học như thế nào?">How are lessons held?</summary><p data-en="Online, one-to-one, via Zoom or Google Meet at a time that suits you." data-vi="Online 1-1 qua Zoom hoặc Google Meet vào thời gian phù hợp với bạn.">Online, one-to-one, via Zoom or Google Meet at a time that suits you.</p></details>
+<details><summary data-en="Can I see your certificates?" data-vi="Tôi có thể xem chứng chỉ không?">Can I see your certificates?</summary><p data-en="Yes, every certificate is linked in the Credentials section above." data-vi="Có, mọi chứng chỉ đều có link trong mục Chứng chỉ ở trên.">Yes, every certificate is linked in the Credentials section above.</p></details>
 </section>
 
-<h2 data-en="Lessons & prices" data-vi="Khóa học & học phí">Lessons &amp; prices</h2>
-<div class="g">
-<div class="panel card"><strong data-en="General English" data-vi="Tiếng Anh tổng quát">General English</strong><div class="price">$12<small> / hour</small></div>
-<ul><li data-en="Speaking, listening, grammar" data-vi="Nói, nghe, ngữ pháp">Speaking, listening, grammar</li><li data-en="Level-based plan" data-vi="Lộ trình theo trình độ">Level-based plan</li><li data-en="IELTS-style speaking practice" data-vi="Luyện nói kiểu IELTS">IELTS-style speaking practice</li></ul><a class="btn o" href="#book" data-pk="General English" data-en="Choose" data-vi="Chọn">Choose</a></div>
-<div class="panel card pop"><strong data-en="Business English ★" data-vi="Tiếng Anh thương mại ★">Business English ★</strong><div class="price">$18<small> / hour</small></div>
-<ul><li data-en="Emails, meetings, presentations" data-vi="Email, họp, thuyết trình">Emails, meetings, presentations</li><li data-en="Interview &amp; CV English" data-vi="Tiếng Anh phỏng vấn &amp; CV">Interview &amp; CV English</li><li data-en="Professional vocabulary" data-vi="Từ vựng chuyên ngành">Professional vocabulary</li></ul><a class="btn" href="#book" data-pk="Business English" data-en="Choose" data-vi="Chọn">Choose</a></div>
-<div class="panel card"><strong data-en="Young Learners (TEYL)" data-vi="Tiếng Anh trẻ em (TEYL)">Young Learners (TEYL)</strong><div class="price">$12<small> / hour</small></div>
-<ul><li data-en="Games &amp; age-appropriate activities" data-vi="Trò chơi &amp; hoạt động phù hợp lứa tuổi">Games &amp; age-appropriate activities</li><li data-en="Short, engaging sessions" data-vi="Buổi học ngắn, hấp dẫn">Short, engaging sessions</li><li data-en="Progress report for parents" data-vi="Báo cáo tiến độ cho phụ huynh">Progress report for parents</li></ul><a class="btn o" href="#book" data-pk="Young Learners" data-en="Choose" data-vi="Chọn">Choose</a></div>
-</div>
-<p class="mut" data-en="Special offer: first trial lesson (30 min) at half price. Discounts for 10-lesson packs." data-vi="Ưu đãi: buổi học thử đầu tiên (30 phút) giảm 50%. Giảm giá khi mua gói 10 buổi.">Special offer: first trial lesson (30 min) at half price. Discounts for 10-lesson packs.</p>
-
-<h2 data-en="How it works" data-vi="Cách hoạt động">How it works</h2>
-<div class="g">
-<div class="panel"><strong>1.</strong> <span data-en="Send your request below or on WhatsApp." data-vi="Gửi yêu cầu bên dưới hoặc qua WhatsApp.">Send your request below or on WhatsApp.</span></div>
-<div class="panel"><strong>2.</strong> <span data-en="Free level check and goal setting." data-vi="Kiểm tra trình độ và đặt mục tiêu miễn phí.">Free level check and goal setting.</span></div>
-<div class="panel"><strong>3.</strong> <span data-en="Pay and start learning online (Zoom/Google Meet)." data-vi="Thanh toán và học online (Zoom/Google Meet).">Pay and start learning online (Zoom/Google Meet).</span></div>
-</div>
-
-<h2 id="book" data-en="Book your lesson" data-vi="Đặt lịch học">Book your lesson</h2>
-<div class="panel">
+<section id="book"><h2 data-en="Book your lesson" data-vi="Đặt lịch học">Book your lesson</h2>
+<div class="p">
 <label data-en="Your name" data-vi="Tên của bạn">Your name</label><input id="n">
 <label data-en="Lesson type" data-vi="Loại khóa học">Lesson type</label>
-<select id="p"><option>Trial lesson</option><option>General English</option><option>Business English</option><option>Young Learners</option></select>
+<select id="s"><option>Trial lesson</option><option>General English</option><option>Business English</option><option>Young Learners</option></select>
 <label data-en="Your goal / preferred time" data-vi="Mục tiêu / thời gian mong muốn">Your goal / preferred time</label><textarea id="m" rows="3"></textarea>
-<button class="btn" id="wa">WhatsApp</button> <a class="btn o" id="em" href="#">Email</a>
+<button class="btn" id="wb">WhatsApp</button> <button class="btn o" id="eb">Email</button>
+</div></section>
+<footer>© An Thien Phuong Nguyen · +60 111 204 0397 · thienan28031998@gmail.com · <a href="https://www.linkedin.com/in/an-nguyen-098b05355">LinkedIn</a></footer>
 </div>
-
-<footer class="mut">© An Thien Phuong Nguyen · +60 111 204 0397 · thienan28031998@gmail.com · <a style="color:var(--pri)" href="https://www.linkedin.com/in/an-nguyen-098b05355">LinkedIn</a></footer>
-</div>
+<a class="wa" href="https://wa.me/601112040397" target="_blank" rel="noopener">💬 WhatsApp</a>
 <script>
-var L='en',$=function(i){return document.getElementById(i)};
-function msg(){return 'Hello An, I am '+($('n').value||'(name)')+'. I would like: '+$('p').value+'. '+$('m').value}
-$('wa').onclick=function(){window.open('https://wa.me/601112040397?text='+encodeURIComponent(msg()),'_blank')};
-$('em').onclick=function(e){e.preventDefault();window.location.href='mailto:thienan28031998@gmail.com?subject='+encodeURIComponent('English lesson: '+$('p').value)+'&body='+encodeURIComponent(msg())};
-document.querySelectorAll('[data-pk]').forEach(function(a){a.onclick=function(){$('p').value=a.getAttribute('data-pk')}});
-$('lg').onclick=function(){L=L==='en'?'vi':'en';$('lg').textContent=L==='en'?'VI':'EN';document.documentElement.lang=L;
-document.querySelectorAll('[data-en]').forEach(function(e){e.innerHTML=e.getAttribute('data-'+L)})};
+var L='en',$=function(i){return document.getElementById(i)},D='https://drive.google.com/file/d/',
+C=[['CERTIFICATE ENGLISH LANGUAGE TEACHING','TEFL/TESOL · 320 hours','180w03FtYz9KyTMcm1bNxPL5HdzfZGaN3'],['TESOL Certificate','TESOL','1A6aPU0PBK_WOdkcH5Fs20SEjXm0TFNEZ'],['150-Hour TEFL Certificate','Advanced TEFL/TESOL','1WIsNFqWRCynygGR4V79P_XidjNfNs2ZH'],['TEOL Certificate','Teaching English Online · 80h','1nEWKZ0V96mAU8cMOVlXAUkZrfvcZT0Lw'],['TEAL Certificate','Teaching English as an Additional Language · 70h','17Dc9w0ZTxefZRue9XC6BMcF_Fj9qHAIB'],['TEYL Certificate','Teaching English to Young Learners · 60h','1K7ALTWtVVjqvIFHXQyG-Hx4gEeTEn5nO'],['ITTT Diploma','Diploma in TESOL · 250h','1myul__pIVaFkNl1EdaNTAdzdzfPyw0uv'],['ITTT Diploma – Transcript','Official transcript','1Ieo2Bhw22Ob_criwmGWrnD2F5ntgq4WG'],['ITTT Certificate','Certificate in TEFL · 120h','1r_mukmW5E54ftdRvZMwUqklg5LU46c5k'],['ITTT Certificate – Transcript','Official transcript','1yiLaTYlMYDcCuVOurkO72twdvplirrTW']];
+$('cl').innerHTML=C.map(function(c){return '<a class="p cr" target="_blank" rel="noopener" href="'+D+c[2]+'/view?usp=drive_link"><i>🎓</i><span><b>'+c[0]+'</b><small>'+c[1]+'</small></span></a>'}).join('');
+function msg(){return 'Hello An, I am '+($('n').value||'(name)')+'. I would like: '+$('s').value+'. '+$('m').value}
+$('wb').onclick=function(){window.open('https://wa.me/601112040397?text='+encodeURIComponent(msg()),'_blank')};
+$('eb').onclick=function(){location.href='mailto:thienan28031998@gmail.com?subject='+encodeURIComponent('English lesson: '+$('s').value)+'&body='+encodeURIComponent(msg())};
+document.querySelectorAll('[data-pk]').forEach(function(a){a.addEventListener('click',function(){$('s').value=a.getAttribute('data-pk')})});
+$('lg').onclick=function(){L=L==='en'?'vi':'en';$('lg').textContent=L==='en'?'VI':'EN';document.documentElement.lang=L;document.querySelectorAll('[data-en]').forEach(function(e){e.innerHTML=e.getAttribute('data-'+L)})};
 </script>
 </body>
 </html>
